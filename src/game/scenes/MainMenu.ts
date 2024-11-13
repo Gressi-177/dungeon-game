@@ -1,4 +1,3 @@
-import { debugDraw } from "@/utils/debug";
 import { Scene } from "phaser";
 import { EventBus } from "../EventBus";
 
@@ -22,7 +21,7 @@ export class MainMenu extends Scene {
 
         wallsLayer?.setCollisionByProperty({ collides: true });
 
-        debugDraw(wallsLayer!, this);
+        // debugDraw(wallsLayer!, this);
 
         this.fauna = this.physics.add.sprite(
             128,
